@@ -1,2 +1,3 @@
 ### C++ Winsock networking
-Using Winsock for TCP connection between client and server
+Using Winsock for TCP connection between one client client and a server
+Note: this only works on windows.
