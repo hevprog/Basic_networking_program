@@ -96,12 +96,11 @@ int main(){
 
     int iResult;
     char buffer[512];
-// Receive data until the server closes the connection
     do {
         iResult = recv(ConnectSocket,buffer, 512, 0);
         if (iResult > 0){
             printf("Bytes received: %d\n", iResult);
-            buffer[iResult] = '\0';   // null-terminate
+            buffer[iResult] = '\0';   // pag null-terminate
             printf("Received: %s\n", buffer);
         }
         else if (iResult == 0)
